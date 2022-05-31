@@ -7,25 +7,22 @@ import java.util.Scanner;
 
 
 public class Servidor {
-    public static void main(String[] args) {
-        try {
-            try (//Criando o servidor 
-            ServerSocket servidor = new ServerSocket(4000)) {
-                System.out.println("Servidor tá on! na porta: " + servidor);
-                //Canal de comunicação
-                Socket cliente = servidor.accept();
-                System.out.println("Cliente do ip" + cliente.getInetAddress().getHostAddress());
+  public static void main(String[] args) throws IOException {
+      ServerSocket servidor = new ServerSocket(12345);
+      System.out.println("Porta 12345 aberta!");
 
-                Scanner entrada = new Scanner(cliente.getInputStream());
-                while(entrada.hasNextLine()){
-                    System.out.println(entrada.nextLine());
-                }
+      Socket cliente = servidor.accept();
+      System.out.println("Nova conexão com o cliente " +  
+          cliente.getInetAddress().getHostAddress()
+      );
 
-                entrada.close();
-            }
-        } catch (IOException ex) {
-            System.out.println("Erro ao criar o servidor");
-        }
-    }
-    
+      Scanner s = new Scanner(cliente.getInputStream());
+      while (s.hasNextLine()) {
+          System.out.println(s.nextLine());
+      }
+
+      s.close();
+      servidor.close();
+      cliente.close();
+  }
 }
