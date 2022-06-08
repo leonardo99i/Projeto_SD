@@ -1,0 +1,15 @@
+------------ GUIA PARA USAR ROTTEN FLESH --------------
+
+1. Passo - Baixe o Projeto_SD_Part2.zip em seu computador, em seguida
+extraia os arquivos de dentro dele.
+
+ATENÇÃO - Um dos arquivos é um slide de trabalho, serve para aprender
+sobre as funcionalidades do sistema. Separe o slide em uma pasta a parte.
+
+2. Passo - Utilizando uma IDE (preferência VSCode) abra os arquivos já
+descompactados do .zip, nessa IDE. Abra a pasta "Rotten Flesh".
+
+3. Passo - Após abir a pasta "Rotten Flesh", abra o arquivo escrito "index".
+Esse aquivo vai abrir o site Rotten Flesh, um site de avaliação dos diversos
+e variados filmes. Espero que consiga abrir Rotten Flesh com esse guia
+prático. Bom proveito e se possível, deixe sua avaliação sobre nosso site.
