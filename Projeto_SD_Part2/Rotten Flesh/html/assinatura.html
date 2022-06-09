@@ -75,6 +75,8 @@
         <div class="sublogin-conteudo">
           <a href="01-login.html"><button type="button" title="Entrar">Login</button></a>
           <p>ou</p>
+          <a href="02-login.html"><button type="button" title="Entrar">Cadastro</button></a>
+          <p>ou</p>
           <a href="assinatura.html"><button type="button" title="Assinar">Assine</button></a>
         </div>
       </div>
@@ -92,80 +94,34 @@
       <h1>Envie seus dados para ativar a assinatura!</h1>
     </div>
 
-    <!-- início elemento -->
-
-    <div class="elementos conteudo-flex">
-
-      <div class="form-mapa conteudo-flex">
-
-        <!-- inínicio formulário -->
-        <div class="formulario">
-          <form class="form-contato" method="post">
-
-            <div class="dados-user">
-              <div class="icone-contato conteudo-flex">
-                <span class="far fa-user"></span>
-              </div>
-              <fieldset>
-                  <input type="text" id="nome" placeholder="Nome" class="user" required autofocus>
-              </fieldset>
-            </div>
-
-            <div class="dados-user">
-              <div class="icone-contato conteudo-flex">
-                <span class="far fa-envelope"></span>
-              </div>
-              <fieldset>
-                  <input type="email" id="email" placeholder="Email" class="email" required>
-              </fieldset>
-            </div>
-
-            <div class="dados-user">
-              <div class="icone-contato conteudo-flex">
-                <span class="fas fa-phone-alt"></span>
-              </div>
-              <fieldset>
-                <input type="tel" id="telefone" placeholder="Telefone" class="telefone" required>
-              </fieldset>
-            </div>
-
-            <div class="dados-msg">
-              <fieldset>
-                <select name="assunto" id="assunto" required>
-                  <option select selected disabled>Selecione o Assunto:</option>
-                  <option value="0">FleshPRO</option>
-                  <option value="1">Sugestões - Assinatura</option>
-                  <option value="2">Reclamações - Assinatura</option>
-                  <option value="3">Financeiro</option>
-                  <option value="4">Suporte</option>
-                  <option value="5">Outras Informações</option>
-                </select>
-              </fieldset>
-            </div>
-
-            <div class="dados-msg">
-              <fieldset>
-                <textarea id="mensagem" placeholder="Mensagem" required></textarea>
-              </fieldset>
-            </div>
-
-            <div class="dados-msg">
-              <fieldset>
-                <button type="submit" id="botao" title="Enviar">Enviar</button>
-              </fieldset>
-            </div>
-
-          </form>
+        <!-- início do Cadastro -->
+    <body-4>
+      <div class="main-login3">
+        <div class="left-login3">
+          <h1>Faça sua assinatura FleshPRO <br><br> Onde quiser</h1>
+          <img src="../image/finance-app-animate.svg" class="left-login-image3" alt="app de finança">
         </div>
-        <!-- fim formulário -->
-
-        <!-- início mapa -->
-        <div class="fotos">
-          <img src="../image/LIKE-removebg-preview (1).png" alt="Like" title="Like">
-        </div>
-        <!-- fim mapa -->
-
+          <div class="right-login3">
+            <div class="card-login3">
+              <h1>LOGIN</h1>
+              <div class="textfield">
+                <label for="usuario3">Nome</label>
+                <input type="text" name="usuario" placeholder="Usuário"> 
+              </div>
+              <div class="textfield">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" placeholder="Senha"> 
+              </div>
+              <a href="../index.html"><button class="btn-login03">Login</button></a>
+              <div class="cadastro">
+                <p>Não tem cadastro? <br> Faça o seu <a href="02-login.html">Cadastro</a></p>
+              </div>
+            </div>
+          </div>
       </div>
+    </body-2>
+    </div> 
+    <!-- fim do Cadastro -->
 
       <!--início redes sociais -->
       <div class="rede-social conteudo-flex">
@@ -213,9 +169,9 @@
       </div>
       <div class="site-map-conteudo">
         <ul>
-          <li><a href="#">Sua Conta</a></li>
+          <li><a href="01-login.html">Sua Conta</a></li>
           <li><a href="contato.html">Contato</a></li>
-          <li><a href="#">Centro de Ajuda</a></li>
+          <li><a href="ajuda.html">Centro de Ajuda</a></li>
           <li><a href="#">Teste de Velocidade</a></li>
         </ul>
       </div>

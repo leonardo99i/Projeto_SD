@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
 
 <head>
-  <title>Rotten Flesh - Classificação de Filmes</title>
+  <title>Rotten FleshPRO - Assinatura</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width-device-width, initial-scale=1">
   <link rel="apple-touch-icon" sizes="180x180" href="../image/favicons/Rotten_Flesh.png.webp">
@@ -37,7 +37,7 @@
         <div class="conteudo-pesquisa">
           <form class="conteudo-flex" method="post">
           <fieldset class="bar-pesquisa">
-            <input type="text" placeholder="Pesquisar um filme ou série..." alt="Digite aqui um filme ou série para pesquisar">
+            <input type="text" placeholder="Pesquisar filme, série ou ator e mais..." alt="Digite aqui um filme ou série para pesquisar">
           </fieldset>
           <fieldset class="btn-pesquisar conteudo-flex">
             <button type="button" title="Pesquisar">
@@ -70,7 +70,7 @@
       <!-- área de login -->
       <div class="sublogin">
         <div>
-          <button class="subloginbtn">Fazer Login<br>ou Assinar <span class="fa fa-caret-down"></span></button>
+          <button class="subloginbtn">Faça o seu login<br>ou Assine<span class="fa fa-caret-down"></span></button>
         </div>
         <div class="sublogin-conteudo">
           <a href="01-login.html"><button type="button" title="Entrar">Login</button></a>
@@ -91,58 +91,107 @@
   <div class="conteudo-principal">
 
     <div class="primeiro-h1">
-      <h1>Confira dois filmes do Top do Momento</h1>
+      <h1>Envie seus dados para ativar a assinatura!</h1>
     </div>
 
-    <!-- início banner -->
+    <!-- início elemento -->
+
     <div class="elementos conteudo-flex">
-      <div class="banner">
-        <a href="05-filme.html"><img src="../image/Sonic 2 - Banner Oficial2.jpg" alt="modelo banner de série" title="modelo banner de série"><center><br><figcaption>Sonic 2 - O Filme</figcaption></center></a>
-      </div>
-      <div class="banner">
-        <a href="11-serie.html"><img src="../image/Homem Aranha - Banner Oficial.jpg" alt="modelo banner de série" title="modelo banner de série"><center><br><figcaption>Homem Aranha - Sem Volta Para Casa</figcaption></center></a>
-      </div>
-    </div>
-    <!-- fim banner -->
 
-    <!-- início do Cadastro -->
-    <body-3>
-    <div class="main-login2">
-      <div class="left-login2">
-        <h1>Faça o seu Cadastro <br><br> E crie um perfil</h1>
-        <img src="../image/good-team-animate.svg" class="left-login-image2" alt="time legal">
-      </div>
-        <div class="right-login2">
-          <div class="card-login2">
-            <h1>CADASTRO</h1>
-            <div class="textfield2">
-                <label for="CPF">CPF</label>
-                <input type="text" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" name="CPF" placeholder="CPF"> 
+      <div class="form-mapa conteudo-flex">
+
+        <!-- inínicio formulário -->
+        <div class="formulario">
+          <form class="form-contato" method="post">
+
+            <div class="dados-user">
+              <div class="icone-contato conteudo-flex">
+                <span class="far fa-user"></span>
               </div>
-            <div class="textfield2">
-              <label for="usuario">Nome</label>
-              <input type="text" name="nome" placeholder="Nome"> 
-              <br><label for="usuario">Sobrenome</label>
-              <input type="text" name="sobrenome" placeholder="Sobrenome"> 
+              <fieldset>
+                  <input type="text" id="nome" placeholder="Nome" class="user" required autofocus>
+              </fieldset>
             </div>
-            <div class="textfield2">
-                <label for="data_de_nascimento">Data de Nascimento</label>
-                <input type="date" name="data de nascimento" placeholder="Data de Nascimento"> 
-                <br><label for="celular">Celular</label>
-                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="telefone" placeholder="Celular"> 
+
+            <div class="dados-user">
+              <div class="icone-contato conteudo-flex">
+                <span class="far fa-envelope"></span>
               </div>
-            <div class="textfield2">
-              <label for="senha">Senha</label>
-              <input type="password" name="senha" placeholder="Crie sua senha"> 
+              <fieldset>
+                  <input type="email" id="email" placeholder="Email" class="email" required>
+              </fieldset>
             </div>
-            <a href="01-login.html"><button class="btn-login02">Cadastro</button></a>
-          </div>
+
+            <div class="dados-user">
+              <div class="icone-contato conteudo-flex">
+                <span class="fas fa-phone-alt"></span>
+              </div>
+              <fieldset>
+                <input type="tel" id="telefone" placeholder="Telefone" class="telefone" required>
+              </fieldset>
+            </div>
+
+            <div class="dados-msg">
+              <fieldset>
+                <select name="assunto" id="assunto" required>
+                  <option select selected disabled>Selecione o Assunto:</option>
+                  <option value="0">FleshPRO</option>
+                  <option value="1">Sugestões - Assinatura</option>
+                  <option value="2">Reclamações - Assinatura</option>
+                  <option value="3">Financeiro</option>
+                  <option value="4">Suporte</option>
+                  <option value="5">Outras Informações</option>
+                </select>
+              </fieldset>
+            </div>
+
+            <div class="dados-msg">
+              <fieldset>
+                <textarea id="mensagem" placeholder="Se quiser ativar a sua assinatura escreva 'Quero ser assinante FleshPRO.' " required></textarea>
+              </fieldset>
+            </div>
+
+            <div class="dados-msg">
+              <fieldset>
+                <button type="submit" id="botao" title="Enviar">Enviar</button>
+              </fieldset>
+            </div>
+
+          </form>
         </div>
-    </div>
-  </body-3>
-</div>
-  <!-- fim do Cadastro -->
+        <!-- fim formulário -->
 
+        <!-- início mapa -->
+        <div class="fotos">
+          <img src="../image/LIKE-removebg-preview (1).png" alt="Like" title="Like">
+        </div>
+        <!-- fim mapa -->
+
+      </div>
+
+      <!--início redes sociais -->
+      <div class="rede-social conteudo-flex">
+        <div>
+          <a href="#"><span class="fab fa-facebook rede-social" alt="ícone do facebook"></span></a>
+        </div>
+        <div>
+          <a href="#"><span class="fab fa-instagram rede-social" alt="ícone do instagram"></span></a>
+        </div>
+        <div>
+          <a href="#"><span class="fab fa-twitter rede-social" alt="ícone do twitter"></span></a>
+        </div>
+        <div>
+          <a href="#"><span class="fab fa-youtube rede-social" alt="ícone do youtube"></span></a>
+        </div>
+      </div>
+      <!-- fim redes sociais -->
+
+
+
+    </div>
+    <!-- fim elemento -->
+
+  </div>
   <!-- fim conteúdo principal -->
 
   <!-- início rodape -->
@@ -174,7 +223,7 @@
       </div>
     </div>
     <div>
-      <img src="../image/Rotten_Flesh-removebg-preview.png" alt="Imagem logotipo da filmov" title="Imagem logotipo da filmov">
+      <img src="../image/Rotten_Flesh-removebg-preview.png" alt="Imagem logotipo da SDF" title="Imagem logotipo da SDF">
     </div>
     <div>
       <p>2022 - Rotten Flesh S.A. by <a href="https://github.com/leonardo99i/Projeto_SD">Grupo de Monstro</a></p>
